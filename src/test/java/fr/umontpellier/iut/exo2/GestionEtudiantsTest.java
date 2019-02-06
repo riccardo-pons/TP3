@@ -1,5 +1,5 @@
 package fr.umontpellier.iut.exo2;
-
+import fr.umontpellier.iut.exo1.GestionEtudiants;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -14,4 +14,5 @@ class GestionEtudiantsTest {
         assertDoesNotThrow(() -> GestionEtudiants.main(new String[1]));
 
     }
+
 }
