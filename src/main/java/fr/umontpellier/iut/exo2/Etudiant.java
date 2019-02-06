@@ -37,14 +37,19 @@ public class Etudiant {
             this.notes.add(n);
         }
 
-        //public double calculMoyenne(){
+        public double calculMoyenne(){
          //   for (int i = 0; i < this.notes.size(); i++) {
             //    this.notes.get(i);
           //  }
         //}
-
+        double totalValeur = 0;
+        double totalCoef = 0;
         for(Note n : this.notes){
-            n;
+            double val =n.getValeur();
+            double coeff =  n.getMatière().getCoeff();
+        }
+            totalValeur += val + coeff;
+            totalCoef += coeff;
     }
 
 }
