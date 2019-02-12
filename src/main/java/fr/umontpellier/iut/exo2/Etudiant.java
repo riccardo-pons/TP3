@@ -38,18 +38,21 @@ public class Etudiant {
         }
 
         public double calculMoyenne(){
-         //   for (int i = 0; i < this.notes.size(); i++) {
-            //    this.notes.get(i);
-          //  }
-        //}
-        double totalValeur = 0;
-        double totalCoef = 0;
+        double totalValeurs = 0;
+        double totalCoefficient = 0;
         for(Note n : this.notes){
-            double val =n.getValeur();
+            double val = n.getValeur();
             double coeff =  n.getMatière().getCoeff();
         }
-            totalValeur += val + coeff;
+            totalValeur += val * coeff;
             totalCoef += coeff;
+    }
+    if (totalCoefficients == 0){
+        return 0;
+
+    }
+    else {
+        return totalValeurs / totalCoefficient;
     }
 
 }
